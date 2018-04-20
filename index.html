@@ -11,45 +11,68 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-	    <li class="search_wrapper_li">
-		<div class="top_search_wrapper col-sm-12 col-xs-12">
-		<form action="" method="get">
-    <div class="col-sm-6 col-xs-6">
-      <input type="text" class="form-control" placeholder="Search Nerds Near You" />
-	  </div>
-	  <div class="col-sm-4 col-xs-4">
-      <input type="text" class="form-control" placeholder="Location" />
-	  </div>
-	  <div class="col-sm-2 col-xs-2">
-     
-      <button type="submit" form="form1" value="Submit" class="top_search_submit_button"><span class="glyphicon glyphicon-search"></span></button>
-      </div>
-   
-  </form>
-  </div>
-  </li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
+<div id="popularnerds-navbar">
+    <div class="container">
+        <div class="row row1">
+            <ul class="largenav pull-right">
+                <li class="upper-links"><a class="links" href="https://popularnerds.com/">Link 1</a></li>
+                <li class="upper-links"><a class="links" href="https://campusbox.org/">Link 2</a></li>
+                <li class="upper-links"><a class="links" href="https://popularnerds.com/">Link 3</a></li>
+                <li class="upper-links"><a class="links" href="https://popularnerds.com/">Link 4</a></li>
+                <li class="upper-links"><a class="links" href="https://popularnerds.com/">Link 5</a></li>
+                <li class="upper-links"><a class="links" href="https://popularnerds.com/">Link 6</a></li>
+                <li class="upper-links">
+                    <a class="links" href="https://popularnerds.com/">
+                       <i class="glyphicon glyphicon-map-marker"></i>
+                    </a>
+                </li>
+                <li class="upper-links dropdown"><a class="links" href="https://popularnerds.com/">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li class="profile-li"><a class="profile-links" href="http://yazilife.com/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="http://hacksociety.tech/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://popularnerds.com/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://popularnerds.com/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://popularnerds.com/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://popularnerds.com/">Link</a></li>
+                        <li class="profile-li"><a class="profile-links" href="https://popularnerds.com/">Link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="row row2">
+            <div class="col-sm-2">
+                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Popular Nerds</span></h2>
+                <h1 style="margin:0px;"><span class="largenav">Popular Nerds</span></h1>
+            </div>
+            <div class="popularnerds-navbar-search smallsearch col-sm-8 col-xs-11">
+                <div class="row">
+                    <input class="popularnerds-navbar-input col-xs-11" type="search" placeholder="Search for Products, Brands and more" name="keyword">
+                    <button class="popularnerds-navbar-button col-xs-1">
+                        <svg width="15px" height="15px">
+                            <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467 "></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="cart largenav col-sm-2">
+                <a class="cart-button">
+                    Create A Post
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #f4511e; padding-top: 10px;">
+        <span class="sidenav-heading">Home</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="https://popularnerds.com/">Link</a>
+    <a href="https://popularnerds.com/">Link</a>
+    <a href="https://popularnerds.com/">Link</a>
+    <a href="https://popularnerds.com/">Link</a>
+</div>
 <div class="jumbotron text-center">
   <h1>Company</h1> 
   <p>We specialize in blablabla</p> 
