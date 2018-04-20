@@ -8,6 +8,18 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
    // document.body.style.backgroundColor = "rgba(0,0,0,0)";
 }
+window.onscroll = function() {mystickyheaderFunction()};
+
+var header = document.getElementById("tomakeheadersticky");
+var sticky = header.offsetTop;
+
+function mystickyheaderFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("stickyheader");
+  } else {
+    header.classList.remove("stickyheader");
+  }
+}
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

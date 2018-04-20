@@ -236,10 +236,12 @@
 
 .row1{
     padding-top: 10px;
+	padding-right: 4.5%;
 }
 
 .row2 {
-    padding-bottom: 20px;
+        padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .popularnerds-navbar-input {
@@ -264,19 +266,24 @@
     cursor: pointer;
 }
 
+.cart-button:hover {
+background-color: #f4511e;	
+color:white;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+}
 .cart-button {
-    background-color: #f4511e;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
-    padding: 10px 0;
+    background-color: white;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
+    padding: 6px 0px 0px 0px;
     text-align: center;
     height: 41px;
     border-radius: 2px;
     font-weight: 500;
     width: 120px;
     display: inline-block;
-    color: #FFFFFF;
+    color: #f4511e ;
     text-decoration: none;
-    color: inherit;
+    
     border: none;
     outline: none;
 }
@@ -447,4 +454,9 @@
 }
 .glyphicon-map-marker{
 	font-size:18px;
+}
+.stickyheader{
+	position:fixed;
+	top:0;
+	width:100%;
 }
